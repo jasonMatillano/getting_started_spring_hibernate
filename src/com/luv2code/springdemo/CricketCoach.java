@@ -6,7 +6,7 @@ public class CricketCoach implements Coach {
 	
 	// create a no arg-constructor
 	public CricketCoach() {
-		System.out.println("CricketCoach: inside the no-arg constructor");
+		//System.out.println("CricketCoach: inside the no-arg constructor");
 	}
 	
 	// create setter method
