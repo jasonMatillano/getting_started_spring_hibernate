@@ -1,6 +1,5 @@
 package com.luv2code.springdemo;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringApp {
@@ -12,10 +11,10 @@ public class HelloSpringApp {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// retrieve bean from spring container 
-		Coach theCoach = context.getBean("trackCoachBean", Coach.class);
+		Coach myCoach = context.getBean("myCoachBean", Coach.class);
 		
 		// call methods on the bean
-		System.out.println(theCoach.getDailyWorkOut());
+		System.out.println(myCoach.getDailyWorkOut());
 		
 		//close the context
 		context.close();
