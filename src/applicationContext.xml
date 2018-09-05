@@ -6,11 +6,16 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-
+	
+	<!-- Define your dependency/helper here -->
+	<bean id="myFortuneService"
+    	class="com.luv2code.springdemo.HappyFortuneService">
+    </bean>
 	
     <!-- Define your beans here -->
     <bean id="myCoachBean"
     	class="com.luv2code.springdemo.TrackCoach">
+    	<constructor-arg ref="myFortuneService"/>
     </bean>
     
 </beans>
