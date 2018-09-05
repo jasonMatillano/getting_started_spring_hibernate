@@ -11,7 +11,7 @@ public class CricketCoach implements Coach {
 	
 	// create setter method
 	public void setFortuneService(FortuneService fortuneService) {
-		System.out.println("CricketCoach: inside the setter method");
+		//System.out.println("CricketCoach: inside the setter method");
 		this.fortuneService = fortuneService;
 	}
 
