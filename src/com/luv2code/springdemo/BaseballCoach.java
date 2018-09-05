@@ -18,5 +18,17 @@ public class BaseballCoach implements Coach{
 	public String getDailyFortune() {
 		return "From Baseball: " + fortuneService.getFortune();
 	}
+
+	@Override
+	public String getEmailAddress() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getTeam() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

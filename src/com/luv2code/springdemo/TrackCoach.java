@@ -18,4 +18,16 @@ public class TrackCoach implements Coach {
 		return "From Track: " + fortuneService.getFortune();
 	}
 
+	@Override
+	public String getEmailAddress() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getTeam() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

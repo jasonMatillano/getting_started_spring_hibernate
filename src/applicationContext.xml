@@ -15,12 +15,20 @@
     <!-- Define your beans here -->
     <bean id="myCoachBean"
     	class="com.luv2code.springdemo.BaseballCoach">
+    	
+    	<!-- set up constructor dependency injection -->
     	<constructor-arg ref="myFortuneService"/>
     </bean>
     
     <bean id="myCricketCoachBean"
     	class="com.luv2code.springdemo.CricketCoach">
+    	
+    	<!-- set up setter dependency injection -->
     	<property name="fortuneService" ref="myFortuneService"/>
+    	
+    	<!-- inject lateral values -->
+    	<property name="emailAddress" value="jas4uuuu@yahoo.com"/>
+    	<property name="team" value="segatakai"/>
     </bean>
     
 </beans>
